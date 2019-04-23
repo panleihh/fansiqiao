@@ -1,0 +1,90 @@
+.title {
+  margin: 0;
+  padding: 8px 0 24px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2c383c;
+  border-bottom: 1px solid #ededed;
+}
+
+.line2 {
+  margin: 20px 0 0 0;
+  height: 6px;
+  width: 50px;
+  background: #ffd42d;
+}
+
+.sectionTitle {
+  margin: 0;
+  padding: 20px 0 0 0;
+  font-size: 24px;
+  font-weight: 300;
+  color: #2c383c;
+}
+
+.sectionList {
+  margin: 0;
+  padding: 0;
+}
+
+.sectionListItem {
+  padding: 15px 0 20px;
+  margin: 0;
+  border-bottom: 1px solid #ededed;
+  list-style: none;
+}
+
+.itemTitle {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c383c;
+}
+
+.itemTime {
+  color: #2c383c;
+}
+
+.itemDesc {
+  margin: 5px 0 0 0;
+  color: #828282;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.skillsListItem {
+  margin-bottom: 2px;
+  list-style: none;
+}
+
+.skillsItemTitle {
+  margin-bottom: 1px;
+  font-size: 13px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #9a9a9a;
+}
+
+.skillsItemNum {
+  float: right;
+  color: #6a6a6a;
+}
+
+.skillsItemBg {
+  display: table;
+  position: relative;
+  height: 20px;
+  width: 100%;
+  border: 1px solid #ededed;
+}
+
+.skillsItemBgSpan {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  background: #ffd42d;
+}

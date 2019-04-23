@@ -24,15 +24,14 @@ export default class Nav extends Component {
   }
 
   state = {
-    index: 0,
+    index: 1,
   }
 
   handleChangeTab = i => () => {
     const { onChangeTab } = this.props;
 
     this.setState({ index: Number(i) });
-
-    onChangeTab(i);
+    onChangeTab(Number(i));
   }
 
   render() {
