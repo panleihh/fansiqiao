@@ -5,11 +5,11 @@ import classnames from 'classnames';
 import styles from './Nav.module.css';
 
 const navList = {
-  1: 'profile',
-  2: 'work',
-  3: 'resume',
-  4: 'blog',
-  5: 'contact',
+  1: '自我介绍',
+  2: '工作瞬间',
+  3: '简历',
+  4: '关于我',
+  5: '联系方式',
 }
 
 export default class Nav extends Component {

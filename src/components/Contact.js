@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import styles from './Contact.module.css';
 
 const list = [
-  { icon: 'home', value: 'lorem ipsum street' },
-  { icon: 'tel', value: '+399 (500) 321 9548' },
-  { icon: 'e-mail', value: 'info@domain.com' },
+  { icon: '住址', value: '北京市朝阳区将台路' },
+  { icon: '手机号', value: '188600946777' },
+  { icon: '邮箱', value: 'fan_sqiao@163.com' },
 ]
 
 export default class Contact extends Component {
@@ -15,7 +15,7 @@ export default class Contact extends Component {
     return (
       <div>
         <h2 className={styles.title}>
-          Contact Me
+          联系我
         </h2>
 
         <div className={styles.map}>
