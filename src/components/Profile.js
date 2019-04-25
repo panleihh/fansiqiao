@@ -4,8 +4,8 @@ import styles from './Profile.module.css';
 
 const list = [
   { key: '姓名', value: 'Robb Armstrong' },
-  { key: '毕业', value: '2017年6月' },
-  { key: '生日', value: '07 06, 1995' },
+  { key: '毕业', value: '2017.06' },
+  { key: '生日', value: '1995.07.06' },
   { key: '邮箱', value: 'fan_sqiao@163.com'},
   { key: '地址', value: '北京市朝阳区' },
   { key: '联系电话', value: '18600946777' },

@@ -7,7 +7,7 @@ import styles from './Nav.module.css';
 const navList = {
   1: '自我介绍',
   2: '工作瞬间',
-  3: '简历',
+  3: '工作经历',
   4: '关于我',
   5: '联系方式',
 }

@@ -4,6 +4,7 @@ import Nav from '../components/Nav';
 import Profile from '../components/Profile';
 import Work from '../components/Work';
 import Resume from '../components/Resume';
+import About from '../components/About';
 import Contact from '../components/Contact';
 
 import styles from './Home.module.css';
@@ -29,7 +30,7 @@ export default class Home extends Component {
           {active === 1 ? ( <Profile /> ) : null}
           {active === 2 ? ( <Work /> ) : null}
           {active === 3 ? ( <Resume /> ) : null}
-          {active === 4 ? ( <Profile /> ) : null}
+          {active === 4 ? ( <About /> ) : null}
           {active === 5 ? ( <Contact /> ) : null}
         </div>
       </div>

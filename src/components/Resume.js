@@ -34,15 +34,17 @@ export default class Resume extends Component {
         <h2 className={styles.title}>
           Resume
         </h2>
-        
+
         <section>
           <h4 className={styles.sectionTitle}>工作经历</h4>
           <div className={styles.line2} />
           <ul className={styles.sectionList}>
             {workList.map(item => (
               <li className={styles.sectionListItem} key={item.time}>
-                <h5 className={styles.itemTitle}>{item.title}</h5>
-                <span className={styles.itemTime}>{item.time}</span>
+                <h5 className={styles.itemTitle}>
+                  <span className={styles.itemTime}>{item.time}</span>
+                  {item.title}
+                </h5>
                 <p className={styles.itemDesc}>{item.desc}</p>
               </li>
             ))}
@@ -55,8 +57,10 @@ export default class Resume extends Component {
           <ul className={styles.sectionList}>
             {preWorkList.map(item => (
               <li className={styles.sectionListItem} key={item.time}>
-                <h5 className={styles.itemTitle}>{item.title}</h5>
-                <span className={styles.itemTime}>{item.time}</span>
+                <h5 className={styles.itemTitle}>
+                  <span className={styles.itemTime}>{item.time}</span>
+                  {item.title}
+                </h5>
                 <p className={styles.itemDesc}>{item.desc}</p>
               </li>
             ))}
@@ -69,8 +73,10 @@ export default class Resume extends Component {
           <ul className={styles.sectionList}>
             {schoolList.map(item => (
               <li className={styles.sectionListItem} key={item.title}>
-                <h5 className={styles.itemTitle}>{item.title}</h5>
-                <span className={styles.itemTime}>{item.time}</span>
+                <h5 className={styles.itemTitle}>
+                  <span className={styles.itemTime}>{item.time}</span>
+                  {item.title}
+                </h5>
                 <p className={styles.itemDesc}>{item.desc}</p>
               </li>
             ))}
