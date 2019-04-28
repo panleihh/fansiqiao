@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: #f3f3f4;
+  transition: all .3s ease-in-out;
 }
 
 code {
