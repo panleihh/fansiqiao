@@ -8,7 +8,7 @@ import styles from './Contact.module.css';
 
 const list = [
   { icon: 'home', value: '北京市朝阳区将台路' },
-  { icon: 'phone', value: '188600946777' },
+  { icon: 'phone', value: '18600946777' },
   { icon: 'envelope', value: 'fan_sqiao@163.com' },
 ]
 

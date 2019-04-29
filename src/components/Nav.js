@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+import { IsPC } from '../common/help';
+
 import styles from './Nav.module.css';
 
 const navList = {
@@ -38,6 +40,9 @@ export default class Nav extends Component {
   handleChangeTab = i => () => {
     const { onChangeTab } = this.props;
 
+    if (!IsPC()) {
+      window.scrollTo({ top: 300, behavior: "smooth" });
+    }
     this.setState({ index: Number(i) });
     onChangeTab(Number(i));
   }
@@ -52,7 +57,9 @@ export default class Nav extends Component {
     return (
       <div className={preClass}>
         <div className={styles.avatar}>
-          <img className={styles.avatarImg} src='' alt='' />
+          <div className={styles.avatarBox}>
+            <img className={styles.avatarImg} src='' alt='' />
+          </div>
         </div>
 
         <ul className={styles.list}>

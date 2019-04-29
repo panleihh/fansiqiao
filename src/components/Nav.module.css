@@ -9,8 +9,7 @@
   background: linear-gradient(to top,#000 0%,#c1bdb1 100%);
 }
 
-.avatarImg {
-  display: block;
+.avatarBox {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,6 +18,14 @@
   margin: auto;
   width: 140px;
   height: 140px;
+  border: 12px solid rgba(189, 187, 180, .2);
+  border-radius: 50%;
+}
+
+.avatarImg {
+  display: block;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   border-radius: 50%;
 }
