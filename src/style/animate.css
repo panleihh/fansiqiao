@@ -1,0 +1,65 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+.flipInX {
+  backface-visibility: visible!important;
+  animation-name: flipInX;
+}
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}

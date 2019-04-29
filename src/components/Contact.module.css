@@ -16,12 +16,13 @@
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 0;
 }
 
 .listItem {
-  margin-right: 18px;
+  margin: 0 18px 8px 0;
   font-size: 14px;
   color: #828282;
   list-style: none;
@@ -33,6 +34,14 @@
   color: #4c4d4f;
 }
 
-.listItemSpan {
+.listItemLink {
+  color: inherit;
+  text-decoration: none;
+}
 
+
+@media only screen and (max-width: 767px) {
+  .listItem {
+    width: 100%;
+  }
 }

@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 
 import { BMAP_ANIMATION_BOUNCE } from '../common/bMap_data';
 
+import '../style/animate.css';
 import styles from './Contact.module.css';
 
 const list = [
-  { icon: '住址', value: '北京市朝阳区将台路' },
-  { icon: '手机号', value: '188600946777' },
-  { icon: '邮箱', value: 'fan_sqiao@163.com' },
+  { icon: 'home', value: '北京市朝阳区将台路' },
+  { icon: 'phone', value: '188600946777' },
+  { icon: 'envelope', value: 'fan_sqiao@163.com' },
 ]
 
 export default class Contact extends Component {
@@ -45,19 +47,23 @@ export default class Contact extends Component {
 
     return (
       <div>
-        <h2 className={styles.title}>
+        <h2 className={classnames('animated fadeInDown', styles.title)}>
           联系我
         </h2>
 
         <div className={styles.map}>
-          <div id={"allmap"} style={{ width: "100%", height: "100%" }} />
+          <div id="allmap" style={{ width: "100%", height: "100%" }} />
         </div>
 
         <ul className={styles.list}>
           {list.map(item => (
             <li className={styles.listItem} key={item.icon}>
-              <i className={styles.listItemIcon}>{item.icon}</i>
-              {item.value}
+              <i className={classnames("fa", `fa-${item.icon}`, styles.listItemIcon)} />
+              {item.icon === 'phone' ? (
+                <a className={styles.listItemLink} href={`tel://${item.value}`}>{item.value}</a>
+              ): (
+                item.value
+              )}
             </li>
           ))}
         </ul>

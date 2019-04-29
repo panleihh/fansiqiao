@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  margin: 0 auto;
+  margin: 100px auto 0;
   width: 980px;
 }
 
@@ -13,4 +13,18 @@
   padding: 20px 30px;
   width: 100%;
   background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: block;
+    margin: 0;
+    width: auto;
+  }
+
+  .nav {
+    width: 100%;
+  }
 }

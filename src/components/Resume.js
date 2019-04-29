@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 
+import '../style/animate.css';
 import styles from './Resume.module.css';
 
 const schoolList = [
@@ -16,7 +18,7 @@ const preWorkList = [
 ]
 
 const workList = [
-  { title: '普天科创实业有限公司园区运营部商务专员，兼任机关联合团支部书记、机关工会文体委员', time: '2017.07-至今', desc: 'lalalla' },
+  { title: '普天科创实业有限公司园区运营部商务专员，兼任机关联合团支部书记、机关工会文体委员', time: '2017.07-至今', desc: '主要负责活动策划工作、合同执行工作、项目申报工作、团支部工作。先后组织策划了园区的包饺子大赛、摄影比赛等活动；负责5家企业的客户接待、合同谈判和执行、协助办理公司入驻事宜，累计收取房屋租金6780 余万元；申报了2017年朝阳区存量商务楼宇经济项目，被评为智慧物业，为企业获得20万元奖励、2018年6月申报了国家第二批工业遗产项目、申报了2018年北京市诚 信企业并通过了审核；组织团员深入学习领会习近平总书记“7.2”重要讲话精神，抓好团的十八大精神学习宣传贯彻工作，推选了中央企业系统（在京）团十八大代表，通 过完善团员的登记、注册、考核等工作，建立健全团组织结构，落实相关团务工作制度 规定并积极参加党委组织的团建活动；主持了2018创响中国·中国普天站“普天双创 杯”首届创新创业大赛颁奖典礼、公司党员知识竞赛、春节联欢会等。' },
 ]
 
 const skillsList = [
@@ -31,11 +33,11 @@ export default class Resume extends Component {
   render() {
     return (
       <div>
-        <h2 className={styles.title}>
+        <h2 className={classnames('animated fadeInDown', styles.title)}>
           Resume
         </h2>
 
-        <section>
+        <section className={classnames('animated slideInLeft')}>
           <h4 className={styles.sectionTitle}>工作经历</h4>
           <div className={styles.line2} />
           <ul className={styles.sectionList}>
@@ -51,7 +53,7 @@ export default class Resume extends Component {
           </ul>
         </section>
 
-        <section>
+        <section className={classnames('animated slideInLeft')}>
           <h4 className={styles.sectionTitle}>实习工作经历</h4>
           <div className={styles.line2} />
           <ul className={styles.sectionList}>
@@ -67,7 +69,7 @@ export default class Resume extends Component {
           </ul>
         </section>
 
-        <section>
+        <section className={classnames('animated slideInLeft')}>
           <h4 className={styles.sectionTitle}>学生工作经历</h4>
           <div className={styles.line2} />
           <ul className={styles.sectionList}>

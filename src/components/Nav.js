@@ -12,6 +12,14 @@ const navList = {
   5: '联系方式',
 }
 
+const iconList = {
+  1: 'user',
+  2: 'briefcase',
+  3: 'file-text',
+  4: 'star',
+  5: 'envelope',
+}
+
 export default class Nav extends Component {
   static propTypes = {
     className: PropTypes.string,
@@ -55,6 +63,7 @@ export default class Nav extends Component {
               onClick={handleChangeTab(item)}
             >
               <span className={styles.listItemText}>{navList[item]}</span>
+              <i className={classnames('fa', `fa-${iconList[item]}`, styles.listItemIcon)} />
             </li>
           ))}
         </ul>

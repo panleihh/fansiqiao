@@ -81,3 +81,8 @@
   background: #f6f6f6;
   border-left: 1px solid #ededed;
 }
+
+.listItemLink {
+  color: inherit;
+  text-decoration: none;
+}
