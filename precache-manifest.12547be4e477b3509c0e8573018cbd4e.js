@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4802e03cc786c39d318e",
+    "revision": "dcd7a8f1204a2c33928d",
     "url": "/fansiqiao/static/css/main.e3f9bbd1.chunk.css"
   },
   {
-    "revision": "4802e03cc786c39d318e",
-    "url": "/fansiqiao/static/js/main.d6dd6fac.chunk.js"
+    "revision": "dcd7a8f1204a2c33928d",
+    "url": "/fansiqiao/static/js/main.1dbbc22b.chunk.js"
   },
   {
     "revision": "cd6335e5f70fdec9d861",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/fansiqiao/static/js/2.8e026f88.chunk.js"
   },
   {
-    "revision": "6416bf0697070d6420586d2d1c6e0080",
+    "revision": "9c4cfdbcc3c1adebbfed27c03d2af741",
     "url": "/fansiqiao/index.html"
   }
 ];
