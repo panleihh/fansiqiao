@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/fansiqiao/static/js/2.8e026f88.chunk.js"
   },
   {
-    "revision": "2adab00fd3c0cb5d1e3c32b10248b7d7",
+    "revision": "80b3709c1e7bb5b2e686d5fd74eac64f",
     "url": "/fansiqiao/index.html"
   }
 ];
