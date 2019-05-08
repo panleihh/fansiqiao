@@ -94,7 +94,7 @@ export default class Resume extends Component {
           </ul>
         </section>
 
-        <section>
+        <section className={styles.skillsContainer}>
           <h4 className={styles.sectionTitle}>Skills</h4>
           <div className={styles.line2} />
           <ul className={styles.sectionList}>

@@ -104,3 +104,12 @@
     display: none;
   }
 }
+
+@media print {
+  .avatar {
+    height: 200px;
+  }
+  .list {
+    display: none;
+  }
+}

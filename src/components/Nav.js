@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import { IsPC } from '../common/help';
+import fans0 from '../images/fans0.jpeg';
 
 import styles from './Nav.module.css';
 
@@ -58,7 +59,7 @@ export default class Nav extends Component {
       <div className={preClass}>
         <div className={styles.avatar}>
           <div className={styles.avatarBox}>
-            <img className={styles.avatarImg} src='' alt='' />
+            <img className={styles.avatarImg} src={fans0} alt='' />
           </div>
         </div>
 

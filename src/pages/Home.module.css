@@ -1,6 +1,8 @@
 .container {
+  position: relative;
   display: flex;
-  margin: 100px auto 0;
+  margin: 100px auto 50px;
+  padding: 0 0 80px 0;
   width: 980px;
 }
 
@@ -24,6 +26,17 @@
     width: auto;
   }
 
+  .nav {
+    width: 100%;
+  }
+}
+
+@media print {
+  .container {
+    display: block;
+    margin: 0;
+    width: auto;
+  }
   .nav {
     width: 100%;
   }

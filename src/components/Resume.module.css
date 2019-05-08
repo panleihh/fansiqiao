@@ -97,3 +97,12 @@
   height: 20px;
   background: #ffd42d;
 }
+
+@media print {
+  .title {
+    display: none;
+  }
+  .skillsContainer {
+    display: none;
+  }
+}

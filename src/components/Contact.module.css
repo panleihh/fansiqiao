@@ -9,7 +9,7 @@
 }
 
 .map {
-  margin: 25px auto;
+  margin: 25px auto 0;
   height: 360px;
   border: 1px solid #ededed;
 }
@@ -18,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 25px 0 0 0;
 }
 
 .listItem {
@@ -41,6 +41,15 @@
 
 
 @media only screen and (max-width: 767px) {
+  .listItem {
+    width: 100%;
+  }
+}
+
+@media print {
+  .map {
+    display: none;
+  }
   .listItem {
     width: 100%;
   }

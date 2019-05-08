@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 40px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background: linear-gradient(to top,#000 0%,#797875 100%);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.btn:hover {
+  color: #000;
+  background: #ffd42d;
+}
+
+.btn:nth-child(1) {
+  margin: 0 20px 0 0;
+}
+
+.btn:nth-child(2) {
+  margin: 0 0 0 20px;
+}
+
+@media print {
+  .container {
+    display: none;
+  }
+}
