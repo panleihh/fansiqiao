@@ -94,4 +94,7 @@
   .line2 {
     display: none;
   }
+  .list {
+    padding-top: 16px;
+  }
 }
